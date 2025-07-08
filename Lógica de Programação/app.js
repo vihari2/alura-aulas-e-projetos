@@ -17,14 +17,54 @@ let mensagemdeErro = 'Erro! Preencha todos os campos';
 alert('Erro, preencha todos os campos');
 alert(mensagemdeErro); 
 
-nomeFulano = prompt('Qual é seu nome?'); 
-idadeFulano = prompt('Qual é sua idade?'); 
+let nomeFulano = prompt('Qual é seu nome?'); 
+let idadeFulano = prompt('Qual é sua idade?'); 
 
 if (idadeFulano >= 18) {
     alert("Parabéns, pode tirar a habilitação")
 }  else {
-    alert('Não pode tirar a habilitação ainda, você tem apenas ' + idadeFulano + ' anos');
+    alert('Não pode tirar a habilitação ainda, você tem apenas ' + idadeFulano + ' anos'); //ou ${idadeFulano}
 }
+
+prompt("qual é o dia da semana?")
+let resposta = prompt("qual é o dia da semana?");
+
+if (resposta === 'sabado' || resposta === 'domingo') {
+alert('Bom fim de semana!'); 
+} else {
+alert('Boa semana!')
+}
+
+let valor = prompt("digite um número "); 
+let number = Number(valor); 
+
+if (isNaN(number)) {
+    alert('Isso é um número válido') 
+} else if (number > 0) {
+    alert("o numero é positivo")
+} else if (number < 0) {
+    alert('Isso é um numero negativo')
+} else {
+    alert('o número é zero')
+}
+
+// Sistema de Pontuação 
+let pontuacao = prompt('Qual é a sua pontuação?');
+
+if (pontuacao >= 100) {
+    alert('Parabéns, você venceu!')
+} else  {
+    alert('Tente novamente para ganhar.')
+}
+
+let saldo = 4.000;
+
+let mensagem = 'Seu saldo é de ${saldo.toFixed(3)}.'; //Formatar
+alert(mensagem);
+
+
+nome = prompt('Qual é o seu nome?');
+alert('Boas Vindas ' + nome);
 
 
 
