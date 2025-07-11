@@ -86,6 +86,36 @@ alert(mensagem);
 nome = prompt('Qual é o seu nome?');
 alert('Boas Vindas ' + nome);
 
+// Crie um contador que comece em 1 e vá até 10 usando um loop while. Mostre cada número.
+let contador2 = 1;
+while(contador2 <= 10) {
+    console.log(contador2);
+    contador2 = contador2 + 1;
+    };
+
+// Crie um contador que começa em 10 e vá até 0 usando um loop while. Mostre cada número.
+let contador3 = 10; 
+while (contador3 >= 0) {
+    console.log(contador3);
+    contador3 = contador3 - 1;
+    };
+
+
+// Crie um programa de contagem regressiva. Peça um número e conte deste número até 0, usando um loop while no console do navegador.
+
+let num = Number(prompt('Digite um numero; '));
+    while(num >= 0) {
+    console.log(num);
+    num--;
+    };
+
+// Crie um programa de contagem progressiva. Peça um número e conte de 0 até esse número, usando um loop while no console do navegador.
+let limite = Number(prompt('Digite um numero: '));
+let contador = 0;
+    while(contador <= limite) {
+    console.log(contador);
+    contador++; 
+    };
 
 
 // Operadores de comparação em JavaScript
