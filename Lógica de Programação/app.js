@@ -1,12 +1,32 @@
-// alert('Boas vindas ao jogo do número secreto!');
-// let numeroSecreto  = 29;
-// chute = prompt('Digite um numero entre 1 e 100: '); 
-// if (numeroSecreto  == chute) {
-//     console.log('Parabéns, você acertou o número secreto! ' + numeroSecreto);
-//      } else {
-//         alert('Que pena, você errou. o numero secreto é: ' + numeroSecreto + ' O seu chute foi: ' + chute);
-//         console.log(chute);
-// }
+alert('Boas vindas ao jogo do número secreto!');
+let numeroSecreto  = 3;
+let chute;
+let tentativas = 1;
+
+//loop
+//enquanto o chute não for igual ao n.s;
+while( chute != numeroSecreto) {
+    chute = prompt('Escolha um número entre 1 e 10')
+    if(chute == numeroSecreto) {
+        alert(`Isso ai! você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativas`)
+    } else {
+        if( chute > numeroSecreto) {
+            alert(`o numero secreto é menor que ${chute}`);
+        } else {
+            alert(`o numero secreto é maior que ${chute}`);
+        }
+        // tentativas = tentativas + 1;
+        tentativas++; 
+    }
+}
+
+
+if (numeroSecreto  == chute) {
+    console.log('Parabéns, você acertou o número secreto! ' + numeroSecreto);
+     } else {
+        alert('Que pena, você errou. o numero secreto é: ' + numeroSecreto + ' O seu chute foi: ' + chute);
+        console.log(chute);
+}
 
 alert('Boas vindas ao nosso site!')
 let nome = 'Lua';
