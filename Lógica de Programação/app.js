@@ -1,14 +1,14 @@
 alert('Boas vindas ao jogo do número secreto!');
-let numeroSecreto  = 3;
+let numeroSecreto  = parseInt(Math.random() * 100 + 1); //parseInt(Math.random() * 100 + 1) garante que sempre teremos um número inteiro entre 1 e 100 (inclusive).
 let chute;
 let tentativas = 1;
 
 //loop
 //enquanto o chute não for igual ao n.s;
 while( chute != numeroSecreto) {
-    chute = prompt('Escolha um número entre 1 e 10')
+    chute = prompt('Escolha um número entre 1 e 100')
     if(chute == numeroSecreto) {
-        alert(`Isso ai! você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativas`)
+        break;   
     } else {
         if( chute > numeroSecreto) {
             alert(`o numero secreto é menor que ${chute}`);
@@ -19,6 +19,13 @@ while( chute != numeroSecreto) {
         tentativas++; 
     }
 }
+let palavraTentativa = tentativas > 1 ? 'tentativas'  : 'tentativa' //operador ternário
+alert(`Isso ai! você descobriu o número secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}`);
+// if(tentativas > 1) {
+//     alert(`Isso ai! você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativas`)
+// } else {
+//     alert(`Isso ai! você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativa`)
+// }
 
 
 if (numeroSecreto  == chute) {
